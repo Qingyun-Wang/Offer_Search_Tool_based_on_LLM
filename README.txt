@@ -10,3 +10,5 @@ Instuction of using this tool:
 
 we preprocessed the raw data and generated the "processed_data.pkl" file, 
 the engine will compare the inputs with data in processed_data and return offers, brand, retailers and combined score
+
+Please check the Fetch_takehome_report
