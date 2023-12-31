@@ -8,4 +8,7 @@ Instuction of using this tool:
     python3 main.py
 3) follow the prompt and enter your search
 
-we preprocessed the raw data and generated the "processed_data.csv" file, the engine will compare the inputs with data in the new file and return offers
+we preprocessed the raw data and generated the "processed_data.pkl" file, 
+the engine will compare the inputs with data in processed_data and return offers, brand, retailers and combined score
+
+Please check the Fetch_takehome_report
