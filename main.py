@@ -14,7 +14,7 @@ def main():
     
     # Run the search engine when input is provided
     if input_text:
-        result = run_engine(offer_data, input_text, 20)
+        result = run_engine(offer_data, input_text, 10)
         st.write(result)  # Display the result
 
 if __name__ == "__main__":
