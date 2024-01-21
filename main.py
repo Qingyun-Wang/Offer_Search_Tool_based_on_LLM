@@ -6,6 +6,8 @@ import streamlit as st
 
 def main():
     offer_data = query_db()
+
+    st.title("Search Offers by input product, brand or retailer")
     
     # Create a text input widget in Streamlit
     input_text = st.text_input("What do you want to search:")
