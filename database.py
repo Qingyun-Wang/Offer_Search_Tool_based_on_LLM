@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine
 import pandas as pd
 import numpy as np
-
+import os
 
 def convert_back_to_ndarray(row):
     # Remove newline characters and extra spaces
@@ -17,11 +17,11 @@ def query_db():
     """Return wells based on criteria."""
     
     conf = {
-    'host': "offer-db.c3qaqweoiwi4.us-east-1.rds.amazonaws.com",
-    'port': '3306',
-    'database': "offerdb",
-    'user': "admin",
-    'password': "Wqy2553969"
+    'host': os.environ.get('DB_HOST'),
+    'port': os.environ.get('DB_PORT'),
+    'database': os.environ.get('DB_NAME'),
+    'user': os.environ.get('DB_USER'),
+    'password': os.environ.get('DB_PASSWORD')
     }
 
     connection_string = f"mysql+pymysql://{conf['user']}:{conf['password']}@{conf['host']}:{conf['port']}/{conf['database']}"
@@ -35,4 +35,3 @@ def query_db():
     #print(df_db)
 
     return df_db
-
