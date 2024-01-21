@@ -5,7 +5,7 @@ Instuction of using this tool:
     source path/to/new/env/bin/activate
     pip install -r requirements.txt
 2) run the tool:
-    python3 main.py
+    streamlit run main.py
 3) follow the prompt and enter your search
 
 we preprocessed the raw data and generated the "processed_data.pkl" file, 
