@@ -1,4 +1,4 @@
-Instuction of using this tool: (You can also click here for [web application](https://offer-search-tool-based-on-llm.onrender.com)):
+Instuction of using this tool:
 
 1) create and install a virtual env using the requirements.txt file (linux or mac):
     python3 -m venv path/to/new/env
